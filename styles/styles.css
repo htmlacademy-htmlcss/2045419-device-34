@@ -86,16 +86,27 @@ body {
 }
 
 .yellow-wrapper {
+  z-index: 1;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 60px 22px 60px;
   width: 1160px;
-  margin: 40px 140px 0 140px;
-  background: #FFE17F;
+  margin: 40px auto 0 auto;
+  background: lInear-gradient(#ffffff 22px, #ffe17f 0);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
 }
 
 .search-wrapper {
+  width: 100%;
   padding-left: 60px;
   padding-right: 60px;
   display: flex;
-  justify-content: space-between;
+
 }
 
 .authorize {
@@ -107,21 +118,106 @@ body {
   display: flex;
 }
 
+.navigation-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .navigation-serviсe {
+  width: 400px;
   display: flex;
   justify-content: space-between;
 }
 
+.navigation-sub-menu {
+  width: 100%;
+  display: none;
+}
+
 .device-logo {
   margin-left: 60px;
-  margin-top: -16px;
+}
+
+.promo-slider {
+  width: 1160px;
+  padding-left: 140px;
+  padding-right: 140px;
+  margin: 0 auto;
+}
+
+.promo-slider-wrapper {
+  position: relative;
+}
+
+.slider-list {
+  padding: 0;
+  margin: 0;
+  width: 1160px;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 1160px);
+  list-style-type: none;
+}
+
+.slider-item {
+  padding-top: 150px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 1160px 314px;
+}
+
+.slider-item-drone {
+ background-image: url("../images/bg-drone.jpg");
+}
+
+.slider-item-band {
+
+}
+
+.slider-item-selfie {
+
+}
+
+
+.info-container {
+  display: flex;
+  align-items: center;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
 }
 
 .slider-tittle {
+  margin-top: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+}
+
+.slider-annotation {
+  padding-top: 124px;
+}
+
+.slider-button {
+  position: absolute;
+  top: 360px;
+}
+
+.slider-button-prev {
+  left: 30px;
+}
+
+.slider-button-next {
+  left: 540px;
 }
 
 .button-about {
