@@ -11,27 +11,38 @@
 
   <body>
     <header class="page-header index-header">
-      <a class="header-logo" href="#">
-        <img class="device-logo" src="images/header-logo.svg" alt="Логотип Девайс.">
-      </a>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <input class="main-search" type="search" placeholder="Текст поиска">
-        <button class="button button-search" type="submit">Найти</button>
-      </form>
-      <div class="authorize">
-        <button class="button button-login" type="button">Войти</button>
-        <button class="button button-logout" type="button">Выйти</button>
-      </div>
-      <a class="link link-compare" href="#">Сравнить</a>
-      <a class="link link-busket" href="#">Корзина</a>
       <!-- navigation -->
-      <nav>
-        <ul class="navigation navigation-main">
-          <li class="navigation-link">
+      <nav class="navigation">
+        <div class="yellow-wrapper">
+          <a class="header-logo" href="#">
+            <img class="device-logo" src="images/header-logo.svg" alt="Логотип Девайс.">
+          </a>
+          <div class="search-wrapper">
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <input class="main-search" type="search" placeholder="Текст поиска">
+              <button class="button button-search" type="submit">Найти</button>
+            </form>
+            <div class="authorize">
+              <button class="button button-login" type="button">Войти</button>
+              <button class="button button-logout" type="button">Выйти</button>
+            </div>
+            <a class="link link-compare" href="#">Сравнить</a>
+            <a class="link link-busket" href="#">Корзина</a>
+          </div>
+          <div class="navigation-list">
             <a class="link catalog-link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="navigation-sub-menu">
-            <ul class="sub-menu-list">
+            <ul class="navigation-serviсe">
+              <li class="navigation-link">
+                <a class="link navigation-link-service" href="#">Доставка</a>
+              </li>
+              <li class="navigation-link">
+                <a class="link navigation-link-service" href="#">Гарантия</a>
+              </li>
+              <li class="navigation-link">
+                <a class="link navigation-link-service" href="#">Контакты</a>
+              </li>
+            </ul>
+            <ul class="navigation-sub-menu">
               <li class="navigatoin-sub-menu-item">
                 <a class="link navigation-sub-menu-link" href="#">Виртуальная реальность</a>
               </li>
@@ -51,37 +62,9 @@
                 <a class="link navigation-sub-menu-link" href="#">Квадракоптеры</a>
               </li>
             </ul>
-          </li>
-        </ul>
-        <ul class="navigation-serviсe">
-          <li class="navigation-link">
-            <a class="link navigation-link-service" href="#">Доставка</a>
-          </li>
-          <li class="navigation-link">
-            <a class="link navigation-link-service" href="#">Гарантия</a>
-          </li>
-          <li class="navigation-link">
-            <a class="link navigation-link-service" href="#">Контакты</a>
-          </li>
-        </ul>
+          </div>
       </nav>
     </header>
-    <main class="main-inner">
-      <!-- breadcrumbs -->
-      <header class="inner-header">
-        <h1 class="inner-header-tittle">Моноподы для селфи</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#">Каталог товаров</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Моноподы для селфи</a>
-          </li>
-        </ul>
-      </header>
       <!-- catalog -->
       <section class="catalog-products">
         <h2 class="filter-tittle">Фильтр:</h2>
@@ -213,11 +196,11 @@
 
     </main>
     <!-- contacts -->
-    <footer class="page-footer inner-footer">
+    <footer class="page-footer main-footer">
       <h2 class="visually-hidden">Контактная информация</h2>
       <img class="footer-logo" src="images/footer-logo.svg" alt="Логотип Девайс.">
-      <div class="contacts">
-        <p class="footer-adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      <div class="footer-contacts">
+        <p class="footer-adress">Санкт-Петербург, набережная<br> реки Карповки, 5, литера П.</p>
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="navigation-service-footer">
           <li class="navigation-item-footer">
