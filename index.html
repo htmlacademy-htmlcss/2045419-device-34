@@ -14,7 +14,7 @@
       <header class="page-header index-header">
         <!-- navigation -->
         <nav class="navigation">
-          <div class="yellow-wrapper">
+          <div class="yellow-wrapper-index">
             <a class="header-logo" href="#">
               <img class="device-logo" src="images/header-logo.svg" alt="Логотип Девайс.">
             </a>
@@ -24,43 +24,43 @@
                 <button class="button button-search" type="submit">Найти</button>
               </form>
               <div class="authorize">
-                <button class="button button-login" type="button">Войти</button>
-                <button class="button button-logout" type="button">Выйти</button>
+                <button class="button button-auth button-login" type="button">Войти</button>
+                <button class="button button-auth button-logout" type="button">Выйти</button>
               </div>
-              <a class="link link-compare" href="#">Сравнить</a>
-              <a class="link link-busket" href="#">Корзина</a>
+              <a class="user-link link-compare" href="#">Сравнить</a>
+              <a class="user-link link-busket" href="#">Корзина</a>
             </div>
             <div class="navigation-list">
-              <a class="link catalog-link" href="catalog.html">Каталог товаров</a>
+              <a class="catalog-link" href="catalog.html">Каталог товаров</a>
               <ul class="navigation-serviсe">
                 <li class="navigation-link">
-                  <a class="link navigation-link-service" href="#">Доставка</a>
+                  <a class="navigation-link-service" href="#">Доставка</a>
                 </li>
                 <li class="navigation-link">
-                  <a class="link navigation-link-service" href="#">Гарантия</a>
+                  <a class="navigation-link-service" href="#">Гарантия</a>
                 </li>
                 <li class="navigation-link">
-                  <a class="link navigation-link-service" href="#">Контакты</a>
+                  <a class="navigation-link-service" href="#">Контакты</a>
                 </li>
               </ul>
               <ul class="navigation-sub-menu">
                 <li class="navigatoin-sub-menu-item">
-                  <a class="link navigation-sub-menu-link" href="#">Виртуальная реальность</a>
+                  <a class="navigation-sub-menu-link" href="#">Виртуальная реальность</a>
                 </li>
                 <li class="navigation-sub-menu-item">
-                  <a class="link navigation-sub-menu-link" href="#">Моноподы для селфи</a>
+                  <a class="navigation-sub-menu-link" href="#">Моноподы для селфи</a>
                 </li>
                 <li class="navigation-sub-menu-item">
-                  <a class="link navigation-sub-menu-link" href="#">Экшн-камеры</a>
+                  <a class="navigation-sub-menu-link" href="#">Экшн-камеры</a>
                 </li>
                 <li class="navigation-sub-menu-item">
-                  <a class="link nav-catalog-sub-menu-link" href="#">Фитнес-браслеты</a>
+                  <a class="nav-catalog-sub-menu-link" href="#">Фитнес-браслеты</a>
                 </li>
                 <li class="navigation-sub-menu-item">
-                  <a class="link nav-catalog-sub-menu-link" href="#">Умные часы</a>
+                  <a class="nav-catalog-sub-menu-link" href="#">Умные часы</a>
                 </li>
                 <li class="navigation-sub-menu-item">
-                  <a class="link navigation-sub-menu-link" href="#">Квадракоптеры</a>
+                  <a class="navigation-sub-menu-link" href="#">Квадракоптеры</a>
                 </li>
               </ul>
             </div>
@@ -181,7 +181,7 @@
           <h2 class="visually-hidden">Слайды</h2>
           <ul class="assortment-list">
             <li class="assortment-item">
-              <a class="link" href="#">
+              <a class="assortment-link" href="#">
                 <div class="assortment-wrapper">
                   <img class="assortment-image" src="images/assortment/vr.svg" width="97" height="55"
                     alt="шлем виртуальной-реальности">
@@ -190,7 +190,7 @@
               </a>
             </li>
             <li class="assortment-item">
-              <a class="link" href="#">
+              <a class="assortment-link" href="#">
                 <div class="assortment-wrapper">
                   <img class="assortment-image" src="images/assortment/monopod.svg" alt="держатель для сэлфи-камеры.">
                 </div>
@@ -198,7 +198,7 @@
               </a>
             </li>
             <li class="assortment-item">
-              <a class="link" href="#">
+              <a class="assortment-link" href="#">
                 <div class="assortment-wrapper">
                   <img class="assortment-image" src="images/assortment/action-cam.svg"
                     alt="камера для съемки в любых условиях.">
@@ -207,7 +207,7 @@
               </a>
             </li>
             <li class="assortment-item">
-              <a class="link" href="#">
+              <a class="assortment-link" href="#">
                 <div class="assortment-wrapper">
                   <img class="assortment-image" src="images/assortment/fitness-band.svg"
                     alt="фитнес-браслет для занятий спортом.">
@@ -216,7 +216,7 @@
               </a>
             </li>
             <li class="assortment-item">
-              <a class="link" href="#">
+              <a class="assortment-link" href="#">
                 <div class="assortment-wrapper">
                   <img class="assortment-image" src="images/assortment/smart-watch.svg"
                     alt="часы с функциями смартфона.">
@@ -225,7 +225,7 @@
               </a>
             </li>
             <li class="assortment-item">
-              <a class="link" href="#">
+              <a class="assortment-link" href="#">
                 <div class="assortment-wrapper">
                   <img class="assortment-image" src="images/assortment/quadro.svg"
                     alt="дрон для слежки, фото и развлечений.">
@@ -240,26 +240,28 @@
           <div class="service-wrapper">
 
             <h2 class="visually-hidden">Услуги</h2>
-            <ul class="service-tabs">
-              <li class="service-tab service-tab-current">
-                <button type="button" class="button button-info tab-label">
-                  <span class="service-text">Доставка</span>
-                </button>
-              </li>
-              <li class="service-tab">
-                <button type="button" class="button button-info tab-label">
-                  <span class="service-text">Гарантия</span>
-                </button>
-              </li>
-              <li class="service-tab">
-                <button type="button" class="button button-info tab-label">
-                  <span class="service-text">Кредит</span>
-                </button>
-              </li>
-            </ul>
+            <div class="service-tabs-wrapper">
+              <ul class="service-tabs">
+                <li class="service-tab service-tab-current">
+                  <button type="button" class="button button-info tab-label">
+                    <span class="service-text">Доставка</span>
+                  </button>
+                </li>
+                <li class="service-tab">
+                  <button type="button" class="button button-info tab-label">
+                    <span class="service-text">Гарантия</span>
+                  </button>
+                </li>
+                <li class="service-tab">
+                  <button type="button" class="button button-info tab-label">
+                    <span class="service-text">Кредит</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
             <ul class="service-list">
               <li class="service-item service-item-delivery">
-                <h2 class="link service-tittle">Доставка</h2>
+                <h2 class="service-tittle">Доставка</h2>
                 <p>Мы с удовольствием доставим ваш товар прямо<br>
                   к вашему подъезду совершенно бесплатно! Ведь<br>
                   мы неплохо заработаем, поднимая его на ваш этаж.
@@ -267,14 +269,14 @@
                 <img class="service-image" src="images/service/courier.svg" alt="картинка спешащего курьера.">
               </li>
               <li class="service-item service-item-guarantee">
-                <h2 class="link service-tittle">Гарантия</h2>
+                <h2 class="service-tittle">Гарантия</h2>
                 <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не
                   переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
                 </p>
                 <img class="service-image" src="#" alt="картинка службы поддержки и сервиса.">
               </li>
               <li class="service-item service-item-credit">
-                <h2 class="link service-tittle" href="#">Кредит</h2>
+                <h2 class="service-tittle" href="#">Кредит</h2>
                 <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
                   наиболее выгодные условия кредита. Выгодные для банка, разумеется.
                 </p>
@@ -300,18 +302,15 @@
           <div class="adress-wrapper">
             <div class="adress-about">
               <h2 class="contacts-title">О нас</h2>
-              <p class="contacts-adress-p">Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в
-                каждом
-                из
-                нас.
-              </p>
+              <p class="contacts-adress-text">Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в
+                каждом из нас.</p>
               <p>Мы можем доставить ваш товар в самые отдалённые<br> уголки России транспортными компаниями:</p>
               <ul class="delivery-list">
                 <li class="delivery-item">Меловые линии</li>
                 <li class="delivery-item">СДИК</li>
                 <li class="delivery-item">ТоксБерри</li>
               </ul>
-              <a class="button button-info" href="#">Подробнее о нас</a>
+              <a class="button-info more-info" href="#">Подробнее о нас</a>
             </div>
             <div class="contacts">
               <h2 class="contacts-page-tittle">Контакты</h2>
@@ -329,7 +328,7 @@
                 <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
                 <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
               </ul>
-              <a class="link button-info" href="#">Напишите нам</a>
+              <a class="button-info email-us" href="#">Напишите нам</a>
             </div>
           </div>
         </section>
@@ -337,18 +336,15 @@
         <section class="subscribe">
           <div class="subscribe-wrapper">
             <h2 class="subscribe-tittle">Подпишитесь на рассылку</h2>
-            <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,
-              длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами,
+              распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
           </div>
           <div class="subscribe-form-wrapper">
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <input class="email-subscribe" type="email" name="address" placeholder="Ваш e-mail">
               <button class="button-subscribe" type="submit">Подписаться</button>
             </form>
-            <div class="subscribe-img">
-              <img class="check-img" src="#">
-              <span class="additional-info">Это бесплатно</span>
-            </div>
+            <span class="additional-info">Это бесплатно</span>
           </div>
         </section>
 
@@ -362,33 +358,52 @@
           <h2 class="visually-hidden">Услуги</h2>
           <ul class="navigation-service-footer">
             <li class="navigation-item-footer">
-              <a class="link footer-navigation-link" href="#">Доставка</a>
+              <a class="footer-navigation-link" href="#">Доставка</a>
             <li class="navigation-item-footer">
-              <a class="link footer-navigation-link" href="#">Гарантия</a>
+              <a class="footer-navigation-link" href="#">Гарантия</a>
             <li class="navigation-item-footer">
-              <a class="link footer-navigation-link" href="#">Контакты</a>
+              <a class="footer-navigation-link" href="#">Контакты</a>
             </li>
           </ul>
-          <a class="contacts-phone" href="tel:+78128121212">Тел. +7 (812) 812-12-12</a>
+          <a class="contacts-phone contacts-phone-footer" href="tel:+78128121212">Тел. +7 (812) 812-12-12</a>
         </div>
         <!-- social -->
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="link" href="">
-                <img src="" alt="Telegram.">
+              <a class="footer-social-link" href="https://t.me/htmlacademy">
+                <svg class="social-icon social-icon-tg" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.44.07.62 4.63c-.8.33-.8.78-.14.98l3.03.94 7.02-4.43c.33-.2.64-.09.39.13l-5.7 5.13-.2 3.13c.3 0 .44-.14.61-.3l1.48-1.44 3.06 2.27c.57.31.97.15 1.12-.53l2-9.48c.21-.83-.3-1.2-.85-.96Z"
+                    fill="#444" />
+                </svg>
               </a>
             </li>
 
             <li class="footer-social-item">
-              <a href="https://www.youtube.com/user/htmlacademyru">
-                <img src="" alt="YouTube.">
+              <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
+                <svg class="social-icon social-icon-youtube" width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#a)">
+                    <path
+                      d="M15.67 1.67c-.1-.32-.27-.61-.51-.84-.25-.24-.56-.41-.9-.5C13.01 0 8 0 8 0 5.9-.02 3.8.08 1.74.32 1.4.4 1.1.58.84.82c-.24.24-.42.53-.51.85A19.4 19.4 0 0 0 0 5.34C0 6.56.1 7.79.33 9c.09.32.27.61.51.85.25.23.56.4.9.5 1.27.32 6.26.32 6.26.32 2.09.02 4.18-.08 6.26-.31.34-.09.65-.26.9-.5.24-.23.42-.52.5-.84.24-1.21.35-2.44.34-3.67.02-1.23-.1-2.46-.33-3.68ZM6.4 7.62V3.05l4.18 2.29L6.4 7.62Z"
+                      fill="#444" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h16v11H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
               </a>
             </li>
             <li class="footer-social-item">
-              <a href="https://twitter.com/htmlacademy_ru">
-                <img src="" alt="Twitter.">
+              <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
+                <svg class="social-icon social-icon-twitter" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.7.16c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4C1 5.26-.2 2.36.8.86c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z"
+                    fill="#444" />
+                </svg>
               </a>
             </li>
           </ul>
