@@ -27,10 +27,51 @@
                 <button class="button button-auth button-login" type="button">Войти</button>
                 <button class="button button-auth button-logout" type="button">Выйти</button>
               </div>
-              <a class="user-link link-compare" href="#">Сравнить</a>
-              <a class="user-link link-busket" href="#">Корзина
-                <div class="favorite-counter">2</div>
-              </a>
+              <ul class="user-list">
+                <li class="user-list-item">
+                  <a class="user-list-item list-item-compare" href="#">Сравнить</a>
+                </li>
+                <li class="user-list-item list-item-busket">
+                  <a class="user-link link-busket" href="#">Корзина
+                    <div class="favorite-counter">2</div>
+                  </a>
+                  <div class="popover popover-cart">
+                    <div class="popover-content">
+                      <ul class="cart-list">
+                        <li class="cart-list-item">
+                          <a class="popover-link" href="#">
+                            <img class="popover-product" src="images/popover/popover-selfie.jpg">
+                            <span class="popover-product-info">Любительская<br> селфи-палка</span>
+                          </a>
+                          <button class="clear-cart-button">
+                            <span class="visually-hidden">Удалить товар из корзины.</span>
+                          </button>
+                        </li>
+                        <li class="cart-list-item">
+                          <a class="popover-link" href="#">
+                            <img class="popover-product" src="images/popover/popover-professional.jpg">
+                            <span class="popover-product-info">Профессиональная<br> селфи-палка</span>
+                          </a>
+                          <button class="clear-cart-button">
+                            <span class="visually-hidden">Удалить товар из корзины.</span>
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="popover-info">
+                        <span class="product-count">
+                          Товаров: 2
+                        </span>
+                        <span class="total-amount">
+                          Сумма: 2000 ₽
+                        </span>
+                      </div>
+                      <button type="button" class="open-cart">
+                        Открыть корзину
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
             <div class="navigation-list">
               <div class="submenu-button">
@@ -156,13 +197,15 @@
               </li>
             </ol>
             <button class="slider-button slider-button-prev" type="button">
-              <svg aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black" />
               </svg>
               <span class="visually-hidden">Предыдущий слайд</span>
             </button>
             <button class="slider-button slider-button-next" type="button">
-              <svg aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z"
                   fill="black" />
@@ -304,7 +347,8 @@
             <div class="delivery-decoration"></div>
             <h2 class="delivery-info-tittle">Доставим редкий товар под заказ</h2>
             <div class="delivery-icon">
-              <svg aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 0H0V2H2V0Z" fill="black" />
                 <path d="M2 4H0V12H2V4Z" fill="black" />
               </svg>
@@ -355,7 +399,7 @@
           </div>
           <div class="subscribe-form-wrapper">
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="email-subscribe" type="email" name="address" placeholder="Ваш e-mail">
+              <input class="email-subscribe" type="email" name="adress" placeholder="Ваш e-mail">
               <button class="button-subscribe" type="submit">Подписаться</button>
             </form>
             <span class="additional-info">Это бесплатно</span>
@@ -387,7 +431,8 @@
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="footer-social-link" href="https://t.me/htmlacademy">
-                <svg aria-hidden="true" focusable="false" class="social-icon social-icon-tg" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg aria-hidden="true" focusable="false" class="social-icon social-icon-tg" width="14" height="12"
+                  viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M12.44.07.62 4.63c-.8.33-.8.78-.14.98l3.03.94 7.02-4.43c.33-.2.64-.09.39.13l-5.7 5.13-.2 3.13c.3 0 .44-.14.61-.3l1.48-1.44 3.06 2.27c.57.31.97.15 1.12-.53l2-9.48c.21-.83-.3-1.2-.85-.96Z"
                     fill="#444" />
@@ -397,7 +442,8 @@
 
             <li class="footer-social-item">
               <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-                <svg aria-hidden="true" focusable="false" class="social-icon social-icon-youtube" width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg aria-hidden="true" focusable="false" class="social-icon social-icon-youtube" width="16" height="11"
+                  viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#a)">
                     <path
                       d="M15.67 1.67c-.1-.32-.27-.61-.51-.84-.25-.24-.56-.41-.9-.5C13.01 0 8 0 8 0 5.9-.02 3.8.08 1.74.32 1.4.4 1.1.58.84.82c-.24.24-.42.53-.51.85A19.4 19.4 0 0 0 0 5.34C0 6.56.1 7.79.33 9c.09.32.27.61.51.85.25.23.56.4.9.5 1.27.32 6.26.32 6.26.32 2.09.02 4.18-.08 6.26-.31.34-.09.65-.26.9-.5.24-.23.42-.52.5-.84.24-1.21.35-2.44.34-3.67.02-1.23-.1-2.46-.33-3.68ZM6.4 7.62V3.05l4.18 2.29L6.4 7.62Z"
@@ -413,7 +459,8 @@
             </li>
             <li class="footer-social-item">
               <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
-                <svg aria-hidden="true" focusable="false" class="social-icon social-icon-twitter" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg aria-hidden="true" focusable="false" class="social-icon social-icon-twitter" width="15" height="15"
+                  viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M9.7.16c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4C1 5.26-.2 2.36.8.86c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z"
                     fill="#444" />
@@ -423,9 +470,42 @@
           </ul>
           <img class="footer-logo" src="images/made-in.svg" alt="Логотип html academy.">
         </section>
-
       </footer>
-    </div>
+      <div class="modal-container">
+        <div class="modal modal-auth">
+          <div class="modal-top">
+            <h2 class="modal-tittle">Доставка под заказ</h2>
+            <button class="modal-close-button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+          </div>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="modal-content">
+              <label class="input-label input-label-name">Ваше имя:
+                <input class="modal-input name-input" type="text" placeholder="Введите имя" required>
+              </label>
+              <label class="input-label input-label-email">Ваш e-mail:
+                <input class="modal-input email-input" type="email" placeholder="почта" required>
+              </label>
+              <label class="input-label all-you-need-label">Что нужно привезти:
+                <input class="all-you-need" type="text" placeholder="В свободной форме">
+              </label>
+              <label class="input-label counter-label">
+                <button class="counter-button" type="button">
+                  <span class="visually-hidden">уменьшить количество</span>
+                  <span class="counter-box"></span>
+                </button>
+                <input class="counter-input" type="number" name="amount-number" id="amount" value="1">
+                <button class="counter-button" type="button">
+                  <span class="visually-hidden">увеличить количество</span>
+                  <span class="counter-box counter-box-plus"></span>
+                </button>
+              </label>
+            </div>
+            <button class="button-info modal-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
   </body>
 
 </html>
