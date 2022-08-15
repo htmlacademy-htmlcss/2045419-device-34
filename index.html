@@ -24,8 +24,10 @@
                 <button class="button button-search" type="submit">Найти</button>
               </form>
               <div class="authorize">
-                <button class="button button-auth button-login" type="button">Войти</button>
-                <button class="button button-auth button-logout" type="button">Выйти</button>
+                <button class="button-auth button-login" type="button">
+                  <span class="auth-text">Войти</span>
+                </button>
+                <button class="button-auth button-logout" type="button">Выйти</button>
               </div>
               <ul class="user-list">
                 <li class="user-list-item">
@@ -114,7 +116,7 @@
                 </ul>
                 <ul class="navigation-sub-menu">
                   <li class="navigation-sub-menu-item">
-                    <a class="navigation-sub-menu-link" href="#">Квадракоптеры</a>
+                    <a class="navigation-sub-menu-link" href="#">Квадрокоптеры</a>
                   </li>
                 </ul>
               </div>
@@ -486,26 +488,31 @@
               </label>
               <label class="input-label input-label-email">Ваш e-mail:
                 <input class="modal-input email-input" type="email" placeholder="почта" required>
+                <span class="email-input-error">Забавный у вас адрес</span>
               </label>
               <label class="input-label all-you-need-label">Что нужно привезти:
-                <input class="all-you-need" type="text" placeholder="В свободной форме">
+                <input class="modal-input all-you-need" type="text" placeholder="В свободной форме">
               </label>
-              <label class="input-label counter-label">
-                <button class="counter-button" type="button">
-                  <span class="visually-hidden">уменьшить количество</span>
-                  <span class="counter-box"></span>
-                </button>
-                <input class="counter-input" type="number" name="amount-number" id="amount" value="1">
-                <button class="counter-button" type="button">
-                  <span class="visually-hidden">увеличить количество</span>
-                  <span class="counter-box counter-box-plus"></span>
-                </button>
-              </label>
+              <div class="counter-wrapper">
+                <label class="input-label counter-label" for="amount">Количество:</label>
+                <div class="counter-input-wrapper">
+                  <button class="counter-button" type="button">
+                    <span class="visually-hidden">уменьшить количество</span>
+                    <span class="counter-box"></span>
+                  </button>
+                  <input class="counter-input" type="number" name="amount-number" id="amount" value="1">
+                  <button class="counter-button" type="button">
+                    <span class="visually-hidden">увеличить количество</span>
+                    <span class="counter-box counter-box-plus"></span>
+                  </button>
+                </div>
+              </div>
             </div>
             <button class="button-info modal-button" type="submit">Отправить</button>
           </form>
         </div>
       </div>
+      <script src="./main.js"></script>
   </body>
 
 </html>

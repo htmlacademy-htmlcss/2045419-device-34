@@ -21,16 +21,59 @@
             <div class="search-wrapper">
               <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
                 <input class="main-search" type="search" name="search-form" placeholder="Текст поиска">
-                <button class="button button-search" type="submit">Найти</button>
+                <button class="button-search" type="submit">Найти</button>
               </form>
-              <div class="authorize">
-                <button class="button-auth button-login" type="button">Войти</button>
+              <div class="authorize is-authorized">
+                <button class="button-auth button-login" type="button">
+                  <span class="auth-text">Войти</span>
+                </button>
                 <button class="button-auth button-logout" type="button">Выйти</button>
               </div>
-              <a class="user-link link-compare" href="#">Сравнить</a>
-              <a class="user-link link-busket" href="#">Корзина
-                <div class="favorite-counter">2</div>
-              </a>
+              <ul class="user-list">
+                <li class="user-list-item">
+                  <a class="user-list-item list-item-compare" href="#">Сравнить</a>
+                </li>
+                <li class="user-list-item list-item-busket">
+                  <a class="user-link link-busket" href="#">Корзина
+                    <div class="favorite-counter">2</div>
+                  </a>
+                  <div class="popover popover-cart">
+                    <div class="popover-content">
+                      <ul class="cart-list">
+                        <li class="cart-list-item">
+                          <a class="popover-link" href="#">
+                            <img class="popover-product" src="images/popover/popover-selfie.jpg">
+                            <span class="popover-product-info">Любительская<br> селфи-палка</span>
+                          </a>
+                          <button class="clear-cart-button">
+                            <span class="visually-hidden">Удалить товар из корзины.</span>
+                          </button>
+                        </li>
+                        <li class="cart-list-item">
+                          <a class="popover-link" href="#">
+                            <img class="popover-product" src="images/popover/popover-professional.jpg">
+                            <span class="popover-product-info">Профессиональная<br> селфи-палка</span>
+                          </a>
+                          <button class="clear-cart-button">
+                            <span class="visually-hidden">Удалить товар из корзины.</span>
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="popover-info">
+                        <span class="product-count">
+                          Товаров: 2
+                        </span>
+                        <span class="total-amount">
+                          Сумма: 2000 ₽
+                        </span>
+                      </div>
+                      <button type="button" class="open-cart">
+                        Открыть корзину
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
             <div class="navigation-list">
               <div class="submenu-button">
@@ -57,7 +100,7 @@
                     <a class="navigation-sub-menu-link" href="#">Виртуальная реальность</a>
                   </li>
                   <li class="navigation-sub-menu-item">
-                    <a class="navigation-sub-menu-link" href="#">Моноподы для селфи</a>
+                    <a class="navigation-sub-menu-link is-current" href="#">Моноподы для селфи</a>
                   </li>
                   <li class="navigation-sub-menu-item">
                     <a class="navigation-sub-menu-link" href="#">Экшн-камеры</a>
@@ -73,7 +116,7 @@
                 </ul>
                 <ul class="navigation-sub-menu">
                   <li class="navigation-sub-menu-item">
-                    <a class="navigation-sub-menu-link" href="#">Квадракоптеры</a>
+                    <a class="navigation-sub-menu-link" href="#">Квадрокоптеры</a>
                   </li>
                 </ul>
               </div>
@@ -217,36 +260,40 @@
             <div class="product-wrapper">
               <ul class="product-list">
                 <li class="product-card">
-                  <a class="product-card-link" href="#">
+                  <a class="product-card-link is-new" href="google.com">
                     <img class="product-card-image" src="images/catalog/amateur-selfie.png" width="360" height="380"
                       alt="Селфи-палка без излишеств">
                     <h3 class="product-card-title">Любительская<br> селфи-палка</h3>
+                    <span class="product-card-price">500 ₽</span>
+                    <span class="product-card-info">Подробнее</span>
                   </a>
-                  <span class="product-card-price">500 ₽</span>
                 </li>
                 <li class="product-card">
                   <a class="product-card-link" href="#">
                     <img class="product-card-image" src="images/catalog/professional-selfie.png" width="360"
                       height="380" alt="Селфи-палка с удобной ручкой и точными настройками">
                     <h3 class="product-card-title">Профессиональная<br> селфи-палка</h3>
+                    <span class="product-card-price">1500 ₽</span>
+                    <span class="product-card-info">Подробнее</span>
                   </a>
-                  <span class="product-card-price">1500 ₽</span>
                 </li>
                 <li class="product-card">
                   <a class="product-card-link" href="#">
                     <img class="product-card-image" src="images/catalog/unsinkable-selfie.png" width="360" height="380"
                       alt="Селфи-палка с корпусом из водостойкого материала">
                     <h3 class="product-card-title">Непотопляемая<br> селфи-палка</h3>
+                    <span class="product-card-price">2500 ₽</span>
+                    <span class="product-card-info">Подробнее</span>
                   </a>
-                  <span class="product-card-price">2500 ₽</span>
                 </li>
                 <li class="product-card">
                   <a class="product-card-link" href="#">
                     <img class="product-card-image" src="images/catalog/follow-me-selfie.png" width="360" height="380"
                       alt="Селфи-палка в виде руки">
-                    <h3 class="product-card-title">Селфи-палка «Следуй<br> за мной»</h3>
+                    <h3 class="product-card-title">Селфи-палка «Следуй за&nbsp;мной»</h3>
+                    <span class="product-card-price">1500 ₽</span>
+                    <span class="product-card-info">Подробнее</span>
                   </a>
-                  <span class="product-card-price">1500 ₽</span>
                 </li>
               </ul>
               <button class="button pagination-show-more" type="button">Загрузить ещё</button>
@@ -348,6 +395,7 @@
 
       </footer>
     </div>
+    <script src="./main.js"></script>
   </body>
 
 </html>
