@@ -15,7 +15,7 @@
         <!-- navigation -->
         <nav class="navigation">
           <div class="yellow-wrapper yellow-wrapper-inner">
-            <a class="header-logo" href="#">
+            <a class="header-logo-link" href="index.html">
               <img class="device-logo" src="images/header-logo.svg" alt="Логотип Девайс.">
             </a>
             <div class="search-wrapper">
@@ -135,7 +135,7 @@
               <a class="breadcrumbs-link" href="#">Каталог товаров</a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Моноподы для селфи</a>
+              <a class="breadcrumbs-link is-current">Моноподы для селфи</a>
             </li>
           </ul>
         </header>
@@ -149,10 +149,10 @@
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar">
-                      <button class="range-toggle toggle-min">
+                      <button type="button" class="range-toggle toggle-min">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button type="button" class="range-toggle toggle-max">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
@@ -260,7 +260,8 @@
             <div class="product-wrapper">
               <ul class="product-list">
                 <li class="product-card">
-                  <a class="product-card-link is-new" href="google.com">
+                  <!-- when class "is-new" get "NEW" pseudo -->
+                  <a class="product-card-link" href="google.com">
                     <img class="product-card-image" src="images/catalog/amateur-selfie.png" width="360" height="380"
                       alt="Селфи-палка без излишеств">
                     <h3 class="product-card-title">Любительская<br> селфи-палка</h3>
@@ -296,9 +297,9 @@
                   </a>
                 </li>
               </ul>
-              <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+              <button class="pagination-show-more" type="button">Загрузить ещё</button>
               <div class="pagination-wrapper">
-                <a class="pagination-prev">
+                <a class="pagination-button">
                   <span>Назад</span>
                 </a>
                 <ul class="pagination">
@@ -320,7 +321,7 @@
                   <li class="pagination-item">
                   </li>
                 </ul>
-                <a class="pagination-next" href="#">
+                <a class="pagination-button" href="#">
                   <span>Вперёд</span>
                 </a>
               </div>
@@ -332,7 +333,9 @@
       <!-- contacts -->
       <footer class="page-footer inner-footer">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <img class="footer-logo" src="images/footer-logo.svg" alt="Логотип Девайс.">
+        <a class="footer-logo-link" href="#">
+          <img class="device-logo device-logo-footer" src="images/footer-logo.svg" alt="Логотип Девайс.">
+        </a>
         <div class="footer-contacts">
           <p class="footer-adress">Санкт-Петербург, набережная<br> реки Карповки, 5, литера П.</p>
           <h2 class="visually-hidden">Услуги</h2>

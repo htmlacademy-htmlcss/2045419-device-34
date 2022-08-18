@@ -15,7 +15,7 @@
         <!-- navigation -->
         <nav class="navigation">
           <div class="yellow-wrapper-index">
-            <a class="header-logo" href="#">
+            <a class="header-logo-link" href="#">
               <img class="device-logo" src="images/header-logo.svg" alt="Логотип Девайс.">
             </a>
             <div class="search-wrapper">
@@ -302,17 +302,17 @@
             <div class="service-tabs-wrapper">
               <ul class="service-tabs">
                 <li class="service-tab service-tab-current">
-                  <button type="button" class="button button-info tab-label">
+                  <button type="button" class="button-info tab-label is-current">
                     <span class="service-text">Доставка</span>
                   </button>
                 </li>
                 <li class="service-tab">
-                  <button type="button" class="button button-info tab-label">
+                  <button type="button" class="button-info tab-label">
                     <span class="service-text">Гарантия</span>
                   </button>
                 </li>
                 <li class="service-tab">
-                  <button type="button" class="button button-info tab-label">
+                  <button type="button" class="button-info tab-label">
                     <span class="service-text">Кредит</span>
                   </button>
                 </li>
@@ -404,7 +404,7 @@
               <input class="email-subscribe" type="email" name="adress" placeholder="Ваш e-mail">
               <button class="button-subscribe" type="submit">Подписаться</button>
             </form>
-            <span class="additional-info">Это бесплатно</span>
+            <span class="additional-info is-free">Это бесплатно</span>
           </div>
         </section>
 
@@ -412,7 +412,9 @@
       <!-- contacts -->
       <footer class="page-footer main-footer">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <img class="footer-logo" src="images/footer-logo.svg" alt="Логотип Девайс.">
+        <a class="footer-logo-link" href="#">
+          <img class="device-logo device-logo-footer" src="images/footer-logo.svg" alt="Логотип Девайс.">
+        </a>
         <div class="footer-contacts">
           <p class="footer-adress">Санкт-Петербург, набережная<br> реки Карповки, 5, литера П.</p>
           <h2 class="visually-hidden">Услуги</h2>
@@ -483,16 +485,20 @@
           </div>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="modal-content">
-              <label class="input-label input-label-name">Ваше имя:
-                <input class="modal-input name-input" type="text" placeholder="Введите имя" required>
-              </label>
-              <label class="input-label input-label-email">Ваш e-mail:
-                <input class="modal-input email-input" type="email" placeholder="почта" required>
-                <span class="email-input-error">Забавный у вас адрес</span>
-              </label>
-              <label class="input-label all-you-need-label">Что нужно привезти:
-                <input class="modal-input all-you-need" type="text" placeholder="В свободной форме">
-              </label>
+              <div class="input-wrapper name-wrapper">
+                <input class="modal-input name-input" type="text" id="name" placeholder="Введите имя" required>
+                <label for="name" class="input-label input-label-name">Ваше имя:</label>
+                <span class="modal-input-info">Добавьте имя</span>
+              </div>
+              <div class="input-wrapper email-wrapper is-error">
+                <input class="modal-input email-input" type="email" id="email" placeholder="Введите e-mail" value="почта" required>
+                <label for="email" class="input-label input-label-email">Ваш e-mail:</label>
+                <span class="modal-input-info">Забавный у вас адрес</span>
+              </div>
+              <div class="text-wrapper">
+                <label for="text" class="input-label all-you-need-label">Что нужно привезти:</label>
+                <input class="modal-input all-you-need" type="text" id="text" placeholder="В свободной форме">
+              </div>
               <div class="counter-wrapper">
                 <label class="input-label counter-label" for="amount">Количество:</label>
                 <div class="counter-input-wrapper">
