@@ -62,6 +62,8 @@ body {
   overflow: hidden;
 }
 
+/* header */
+
 .search-form {
   display: flex;
   align-items: center;
@@ -76,7 +78,7 @@ body {
   line-height: 20px;
   color: #000000;
   padding: 8px;
-  padding-left: 48px;
+  padding-left: 45px;
   width: 359px;
   min-height: 40px;
   background-color: transparent;
@@ -228,8 +230,7 @@ body {
 }
 
 .authorize {
-  margin-right: auto;
-  margin-left: 27px;
+  margin: 3px auto 0 27px;
   display: flex;
 }
 
@@ -260,6 +261,7 @@ body {
   max-width: 246px;
   list-style-type: none;
   margin: 0;
+  margin-top: 5px;
   padding: 0;
 }
 
@@ -304,7 +306,6 @@ body {
   border-radius: 10px;
 }
 
-
 .list-item-busket {
   position: relative;
 }
@@ -321,7 +322,6 @@ body {
   justify-content: space-between;
 }
 
-
 .cart-list-item:not(:last-child) {
   margin-bottom: 41px;
 }
@@ -335,8 +335,9 @@ body {
   height: 1px;
   background: #FFFFFF;
   opacity: 0.1;
-
 }
+
+/* popover */
 
 .popover-cart {
   z-index: 1;
@@ -502,7 +503,6 @@ body {
   align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
-
 }
 
 .catalog-link {
@@ -522,6 +522,8 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+/* submenu */
 
 .submenu-open {
   display: inline-block;
@@ -745,10 +747,11 @@ body {
   opacity: 0.6;
 }
 
-
 .header-logo-link:active .device-logo {
   opacity: 0.3;
 }
+
+/* main-slider */
 
 .promo-slider {
   padding-top: 44px;
@@ -861,7 +864,6 @@ body {
   left: 534px;
 }
 
-
 .top-tittle {
   font-weight: 400;
   font-size: 36px;
@@ -951,7 +953,6 @@ body {
   gap: 40px;
 }
 
-
 .assortment-item {
   margin: 0;
   padding: 0;
@@ -986,6 +987,8 @@ body {
   color: #000000;
 }
 
+/* service */
+
 .service {
   background: lInear-gradient(#ffffff 112px, #f0f0f0 0);
   margin-top: 70px;
@@ -1013,7 +1016,6 @@ body {
   background-color: #000000;
 }
 
-
 .service-tabs {
   list-style-type: none;
   margin: 0;
@@ -1023,7 +1025,6 @@ body {
 .service-tabs-wrapper {
   position: relative;
 }
-
 
 .service-tab:not(:last-of-type) {
   margin-bottom: 36px;
@@ -1083,12 +1084,13 @@ body {
   display: none;
 }
 
-
 .service-image {
   margin-top: 15px;
   grid-column: 2 / 3;
   grid-row: 1 / 3;
 }
+
+/* yellow-button */
 
 .button-info {
   position: relative;
@@ -1170,6 +1172,8 @@ body {
   width: 207px;
   margin: 53px 13px 0 0;
 }
+
+/* delivery */
 
 .delivery-info {
   margin: 0 auto;
@@ -1256,7 +1260,6 @@ body {
   padding-bottom: 71px;
 }
 
-
 .adress-about {
   position: relative;
 }
@@ -1303,6 +1306,8 @@ body {
 .delivery-item-extraspace {
   padding-left: 37px;
 }
+
+/* contacts */
 
 .contacts {
   position: relative;
@@ -1407,6 +1412,8 @@ body {
 .email-us {
   width: 247px;
 }
+
+/* newsletter */
 
 .subscribe {
   padding: 63px 141px 56px 141px;
@@ -1541,17 +1548,20 @@ body {
   color: rgba(240, 240, 240, 0.3);
 }
 
+/* footer */
+
 .page-footer {
   background-color: #444444;
   padding: 60px 140px 70px 140px
 }
 
 .footer-adress {
-  margin: 0 123px 0 0;
+  margin: 0;
   padding: 0;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+  max-width: 250px;
 }
 
 .footer-contacts {
@@ -1709,6 +1719,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 33px;
   align-items: flex-start;
+  transform: translateX(-32px);
 }
 
 .contacts-phone-footer {
