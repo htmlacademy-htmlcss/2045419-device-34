@@ -45,9 +45,11 @@ body {
 }
 
 .content-container {
-  box-shadow: 0 0 15px #E5E5E5;
   background-color: #ffffff;
-  width: 1440px;
+}
+
+.content-box {
+  width: 1160px;
   margin: 0 auto;
 }
 
@@ -67,6 +69,7 @@ body {
 .search-form {
   display: flex;
   align-items: center;
+  margin-right: 25px;
 }
 
 .main-search {
@@ -187,12 +190,13 @@ body {
   background-image: url("../images/log-in.svg");
   background-repeat: no-repeat;
   background-position: center left;
+  margin-right: 14px;
 }
 
 .button-logout {
   display: none;
   opacity: 0.3;
-  margin-left: 14px;
+
 }
 
 .yellow-wrapper {
@@ -207,12 +211,12 @@ body {
 }
 
 .yellow-wrapper-index {
-  z-index: 1;
+  z-index: 2;
   box-sizing: border-box;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  padding: 0 60px 18px 60px;
+  padding: 0 60px 5px 60px;
   width: 1160px;
   margin: 0 auto;
   background: lInear-gradient(#ffffff 40px, #ffe17f 0);
@@ -230,7 +234,8 @@ body {
 }
 
 .authorize {
-  margin: 3px auto 0 27px;
+  margin-right: auto;
+  margin-top: 3px;
   display: flex;
 }
 
@@ -340,7 +345,7 @@ body {
 /* popover */
 
 .popover-cart {
-  z-index: 1;
+  z-index: 5;
   position: absolute;
   right: -78px;
   top: 43px;
@@ -660,7 +665,7 @@ body {
 }
 
 .navigation-sub-menu-link:hover {
- opacity: 0.6;
+  opacity: 0.6;
 }
 
 .navigation-sub-menu-link:focus {
@@ -775,27 +780,25 @@ body {
   list-style-type: none;
 }
 
+
 .slider-item {
-  padding-top: 150px;
+  position: relative;
+  padding-top: 13%;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 1160px 314px;
+  background: lInear-gradient(#ffe17f 41.5%, #ffffff 0);
 }
 
-.slider-item-drone {
-  background-image: url("../images/bg-drone.jpg");
-}
-
-.slider-item-band {
-  background-image: url("../images/bg-band.jpg");
-}
-
-.slider-item-selfie {
-  background-image: url("../images/bg-selfie.jpg");
+.slider-number {
+  position: absolute;
+  right: 48px;
+  top: 32%;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: #ffffff;
 }
 
 .info-container {
@@ -822,11 +825,11 @@ body {
 
 .slider-about {
   margin: 0;
-  margin-bottom: 15px;
 }
 
 .slider-annotation {
   padding-top: 124px;
+  z-index: 1;
 }
 
 .slider-button {
@@ -887,13 +890,14 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 
 .slider-pagination-item {
- width: 12px;
- height: 12px;
- display: flex;
- align-items: flex-start;
+  width: 12px;
+  height: 12px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .slider-pagination-button {
@@ -914,24 +918,24 @@ body {
 
 .slider-pagination-button:hover,
 .slider-pagination-button-current:hover {
- opacity: 0.6;
+  opacity: 0.6;
 }
 
 .slider-pagination-button:focus::after,
 .slider-pagination-button-current:focus::after {
- outline: 2px solid #af4fff;
- outline-offset: 2px;
- position: absolute;
- content: "";
- top: 0;
- left: 0;
- bottom: 0;
- right: 0;
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .slider-pagination-button:active,
 .slider-pagination-button-current:active {
- opacity: 0.3;
+  opacity: 0.3;
 }
 
 .slider-pagination-button:disabled {
@@ -940,13 +944,11 @@ body {
 }
 
 .assortment {
-  padding-top: 67px;
+  padding-top: 51px;
 }
 
 .assortment-list {
   padding: 0;
-  width: 1160px;
-  margin: auto;
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(6, 160px);
@@ -998,12 +1000,10 @@ body {
   position: relative;
   padding-top: 70px;
   padding-bottom: 136px;
-  margin: 0 auto;
   margin-bottom: 70px;
   display: grid;
   grid-template-columns: 280px 1fr;
   column-gap: 116px;
-  width: 1160px;
 }
 
 .service-wrapper::after {
@@ -1181,13 +1181,24 @@ body {
   padding: 0;
 }
 
+.delivery-button-wrapper {
+  width: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .delivery-info-link {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   text-decoration: none;
   color: #000000;
-  justify-content: space-between;
   background: #F0F0F0;
+}
+
+.delivery-info-wrapper {
+  padding: 15px;
 }
 
 .delivery-decoration {
@@ -1195,19 +1206,20 @@ body {
   width: 125px;
   min-height: 100px;
   background-color: #ffe17f;
+  align-self: stretch;
 }
 
 .delivery-decoration::after {
   content: url("../images/truck.svg");
   position: absolute;
-  top: 35px;
-  left: 39px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .delivery-info-tittle {
   font-family: "Raleway", sans-serif;
   margin: 0;
-  margin-right: 36px;
   max-width: 800px;
   padding: 0;
   font-weight: 800;
@@ -1219,7 +1231,6 @@ body {
 }
 
 .delivery-icon {
-  margin-right: 42px;
   width: 40px;
   height: 40px;
   display: flex;
@@ -1227,6 +1238,7 @@ body {
   justify-content: center;
   border-radius: 50%;
   background: rgba(220, 220, 220, 0.5);
+  border: none;
 }
 
 .delivery-image {
@@ -1262,6 +1274,8 @@ body {
 
 .adress-about {
   position: relative;
+  padding-top: 50px;
+  padding-right: 15px;
 }
 
 .adress-about::after {
@@ -1292,6 +1306,10 @@ body {
   padding-left: 34px;
 }
 
+.delivery-item:last-child {
+  margin: 0;
+}
+
 .delivery-item::before {
   position: absolute;
   content: "";
@@ -1312,6 +1330,7 @@ body {
 .contacts {
   position: relative;
   padding-top: 45px;
+  padding-right: 15px;
 }
 
 .contacts::after {
@@ -1329,7 +1348,8 @@ body {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-  margin-bottom: 53px;
+  margin: 0;
+  margin-bottom: 44px;
 }
 
 .contacts-page-tittle {
@@ -1416,9 +1436,12 @@ body {
 /* newsletter */
 
 .subscribe {
-  padding: 63px 141px 56px 141px;
   min-height: 301px;
   background-color: #f0f0f0;
+}
+
+.content-box-subscribe {
+  padding: 63px 141px 56px 141px;
 }
 
 .subscribe-wrapper {
@@ -1431,6 +1454,7 @@ body {
 
 .subscribe-form-wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .subscribe-form {
@@ -1471,7 +1495,7 @@ body {
 }
 
 .email-subscribe::placeholder {
-  font-family: "Rubik",sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -1492,7 +1516,6 @@ body {
 }
 
 .additional-info {
-  margin-left: auto;
   align-self: center;
   padding-left: 40px;
   color: #444444;
@@ -1552,6 +1575,9 @@ body {
 
 .page-footer {
   background-color: #444444;
+}
+
+.content-box-footer {
   padding: 60px 140px 70px 140px
 }
 
@@ -1571,12 +1597,10 @@ body {
 }
 
 .footer-logo-link {
-  display: block;
+  display: inline-block;
   outline: none;
-  width: 145px;
-  height: 40px;
-  margin-right: auto;
-  margin-bottom: 32px;
+  height: 36px;
+  margin-bottom: 36px;
 }
 
 .delice-logo-footer {
@@ -1605,17 +1629,20 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-left: 502px;
 }
 
-.footer-social::after {
-  position: absolute;
+.footer-social::before {
+  position: relative;
   content: "";
   left: 2px;
   top: 18px;
   width: 80px;
   height: 7px;
   background-color: #FFC700;
+}
+
+.footer-social-list {
+  transform: translateX(17px);
 }
 
 .footer-social-item {
@@ -1753,7 +1780,7 @@ body {
 }
 
 .footer-navigation-link:active {
- opacity: 0.3;
+  opacity: 0.3;
 }
 
 .under-header {
@@ -1765,6 +1792,7 @@ body {
 
 .inner-header-tittle {
   margin: 0;
+  margin-bottom: 8px;
   padding: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -1778,7 +1806,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  margin-top: 8px;
 }
 
 .breadcrumbs-link:focus {
@@ -1810,6 +1837,8 @@ body {
 
 .breadcrumbs-item:last-child {
   background-image: none;
+  margin-right: 0;
+  padding-right: 0;
 }
 
 .breadcrumbs-link {
@@ -1851,7 +1880,6 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-
 
 .product-card-link.is-new::after {
   position: absolute;
@@ -1906,7 +1934,6 @@ body {
 }
 
 .product-card-info {
-  display: none;
   position: absolute;
   top: 180px;
   left: 75px;
@@ -1923,6 +1950,8 @@ body {
   background-color: transparent;
   padding: 10px;
   cursor: pointer;
+  display: none;
+  border: none;
 }
 
 .product-card-info::after {
@@ -2217,7 +2246,7 @@ body {
 }
 
 .range-bar-input:active {
-   opacity: 0.3;
+  opacity: 0.3;
 }
 
 .range-bar-input:disabled {
@@ -2329,7 +2358,7 @@ body {
 .sorting {
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 20px 46px 20px 40px;
 }
 
 .select-control {
@@ -2374,6 +2403,10 @@ body {
   border: none;
   cursor: pointer;
   margin-right: 6px;
+}
+
+.card-style-button:last-of-type {
+  margin: 0;
 }
 
 .card-style-button svg {
@@ -2511,7 +2544,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(240, 240, 240, 0.9);
-  z-index: 2;
+  z-index: 3;
   display: none;
 }
 
@@ -2523,7 +2556,7 @@ body {
   position: relative;
   box-sizing: border-box;
   margin: auto;
-  margin-top: 611px;
+  margin-top: 30%;
   padding: 61px 70px 63px 70px;
   background-color: #ffffff;
   width: 920px;
@@ -2536,6 +2569,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 43px;
 }
 
 .modal-tittle {
@@ -2544,7 +2578,6 @@ body {
   font-size: 50px;
   line-height: 50px;
   margin: 0;
-  margin-bottom: 43px;
   padding: 0;
 }
 
@@ -2559,47 +2592,31 @@ body {
 }
 
 .modal-close-button {
-  position: relative;
-  width: 26px;
-  height: 26px;
+  width: 38px;
+  height: 38px;
   border: none;
   background: transparent;
   cursor: pointer;
   margin-bottom: auto;
-  margin-top: 12px;
+  margin-top: 7px;
+  transform: translateX(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.modal-close-button::before,
-.modal-close-button::after {
-  content: "";
-  position: absolute;
-  top: 12px;
-  left: 0;
-  width: 26px;
-  height: 4px;
-  background: #000000;
-}
 
-.modal-close-button::before {
-  transform: rotate(45deg);
-}
-
-.modal-close-button::after {
-  transform: rotate(-45deg);
-}
-
-.modal-close-button:hover::before,
-.modal-close-button:hover::after {
+.modal-close-button:hover svg .modal-close-button:hover svg {
   opacity: 0.6;
 }
 
 .modal-close-button:focus {
   outline: 2px solid #af4fff;
-  outline-offset: 2px;
+  outline-offset: -3px;
 }
 
-.modal-close-button:active::before,
-.modal-close-button:active::after {
+.modal-close-button:active svg,
+.modal-close-button:active svg {
   opacity: 0.3;
 }
 
@@ -2667,6 +2684,7 @@ body {
   padding: 0;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .counter-box::before {
@@ -2677,7 +2695,6 @@ body {
   width: 16px;
   height: 2px;
   background: #000000;
-  cursor: pointer;
 }
 
 .counter-box-plus::after {
@@ -2884,7 +2901,7 @@ input:-webkit-autofill:active {
   padding: 19px 17px 19px 19px;
   width: 200px;
   box-sizing: border-box;
-  background: #333333;
+  background: #000000;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   text-align: left;
   color: #FFFFFF;
@@ -2898,6 +2915,7 @@ input:-webkit-autofill:active {
   right: 39px;
   transform: translateX(-50%);
   background-image: url("../images/popover/popover-decor.svg");
+  fill: #000000;
   background-repeat: no-repeat;
   width: 14px;
   height: 6px;
