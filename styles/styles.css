@@ -2208,6 +2208,7 @@ body {
   width: 50px;
   background-color: transparent;
   border: none;
+  -moz-appearance: textfield;
 }
 
 .range-bar-input::placeholder {
@@ -2823,7 +2824,6 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   box-shadow: inset 0 0 0 60px #EBEBEB;
-  ;
 }
 
 .text-wrapper {
@@ -2843,6 +2843,7 @@ input:-webkit-autofill:active {
 .amount-counter-input {
   width: 60px;
   outline: none;
+  -moz-appearance: textfield;
 }
 
 .amount-counter-input:hover {
