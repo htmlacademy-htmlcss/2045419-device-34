@@ -1505,6 +1505,8 @@ body {
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
   color: #444444;
   background: #f0f0f0;
   border: none;
@@ -1516,7 +1518,9 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  opacity: 0.5;
 }
+
 
 .email-subscribe:hover {
   opacity: 0.8;
@@ -1525,6 +1529,10 @@ body {
 .email-subscribe:focus {
   outline: none;
   background-color: #dcdcdc;
+}
+
+.email-subscribe:not(:placeholder-shown) {
+  background-color: #f0f0f0;
 }
 
 .email-subscribe.is-error {
